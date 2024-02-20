@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Empty Bootstrap Carousel with Black Border</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+          overflow-x: hidden; 
+          margin: 10px;
+          background-color: #ead9f5;
+      }
+    .nav-link {
+        color:#4b0499 !important; 
+        background-color: transparent !important; 
+        border-bottom: 2px solid transparent !important; 
+        
+    }
+    .nav-link:hover {
+        color: #865ab1 !important; 
+        background-color: transparent !important; 
+        border-bottom: 2px solid transparent !important; 
+    }
+    .container.mt-0 {
+        position: relative;
+       top: -375px; 
+    }
+   p, h1, h2{
+    margin: 5px;
+   }
+   .double-border {
+        border-top: 1px double #343a40 !important; 
+        border-bottom: 1px double #343a40 !important;
+        padding: 3px; 
+    }
+    img.rounded {
+  border: 0;
+}
+  </style>
+</head>
+<body>
+    <div class="border border-1 border-dark w-100">
+  <div class="container-fluid p-0">
+          <nav id="navbar-example2" class="navbar navbar-light px-3" style="background-color: #ead9f5;">
+            <img class="float-start w-2px" src="logot.png" style="width: 50px; height: auto;">
+           <h1 style="color: #4b0499;">Recruiters Training Hub</h1>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active-home" href="#scrollspyHeading1">Home</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading4">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+
+<div class="container mt-3">
+    <div class="row">
+        <div id="carousel1" class="carousel slide col-12 border border-none rounded" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner text-center rounded">
+                <div class="carousel-item active">
+                    <img src="lake1.jpeg" alt="Car1" class="rounded d-block mx-auto img-fluid" style="object-fit: cover; max-height: 300px; width: 100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="sunset1.jpeg" alt="Car2" class="rounded d-block mx-auto img-fluid" style="object-fit: cover; max-height: 300px; width: 100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="landscape1.jpeg" alt="Car3" class="rounded d-block mx-auto img-fluid" style="object-fit: cover; max-height: 300px; width: 100%;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+        
+       <!--scroll section-->
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <div class="row mt-3">
+        <div class="col-md-6 mt-3">
+            <div class="text-container double-border rounded ms-3">
+                <h1 class="display-4" id="scrollspyHeading1">Welcome To RTB!</h1>
+                <p>Embark on a rewarding career as a US IT recruiter, domestic IT recruiter, or non-IT recruiter. RTB is your destination for comprehensive training programs, supporting professionals at all levels.</p>
+                <p>Our training programs offer practical exposure in recruitment, emphasizing HR and sales. From newcomers to seasoned professionals, we assist in finding employment until you secure a position.</p>
+                <p>Recruiters, regardless of background, benefit from our programs. Prerequisites include a degree, good English communication skills, and a basic understanding of technical knowledge. Refreshers cover topics like effective communication, office dynamics, soft skills development, resume crafting, interview preparation, and mock questions.</p>
+            </div>
+        </div>
+        <div class="col-md-6 mt-3">
+            <img src="guyrunt.png" class="rounded img-fluid float-end me-3" alt="Image" style="height: 80%;">
+        </div>
+        </div>
+        <div class="row mt-3">
+        <div class="col-md-6">
+            <img src="man1t.png" class="rounded img-fluid ms-3" alt="Image" style="height: 65%;">
+        </div>
+        <div class="col-md-6">
+            <div class="text-container double-border rounded  me-3">
+                <h2 class="display-5" id="scrollspyHeading2">About</h2>
+                <p>Learn Recruitment concepts, become a Professional Recruiter covering HR or IT/Non-IT for Domestic/International roles. Explore commonly asked questions by job seekers for a unique synthesis of methods and techniques.</p>
+                <p>Our end-to-end recruitment services include sourcing, screening, and onboarding. We handle documentation and agreements for acquiring new clients. Corporate training solutions are available for your teams, led by expert trainers specializing in talent acquisition.</p>
+            </div>
+        </div>
+        </div>
+        <div class="row mt-3">
+        <div class="col-md-6">
+            <div class="text-container double-border rounded ms-3">
+                <h2 class="display-5" id="scrollspyHeading3">Services</h2>
+                <p>Specialized training for US IT recruiters, domestic IT recruiters, and non-IT recruiters. Our services encompass comprehensive English communication training, placement assistance, on-the-job support, soft skills development, resume crafting, interview preparation, and tailored corporate training solutions.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="man2t.png" class="rounded img-fluid float-end" alt="Image" style="height: 100%;">
+        </div>
+        </div>
+    <div class="row mt-3">
+        <div class="col-md-8">
+            <img src="man4t.png" class="rounded img-fluid ms-3" alt="Image" style="height: 40%;">
+        </div>
+        <div class="col-md-4">
+            <div class="text-container double-border rounded ms-3 me-3">
+                <h2 class="display-5" id="scrollspyHeading4">Contact Us</h2>
+                <p>Feel free to reach out to us at:</p>
+                <p>Email: pradhikahr@gmail.com</p>
+                <p>Phone: +91 79890 49955</p>
+                <p>We look forward to discuss further with you!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--pricing section-->
+<div class="container mt-0">
+    <h4 class="text-center mb-4" style="font-size: 50px;">Pricing</h4>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card border rounded" style="background-color: #FFC9C2; height: 300px;" onmouseover="this.classList.add('shadow');" onmouseout="this.classList.remove('shadow');">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title"><strong>Standard Plans</strong></h5>
+                    <p class="card-text flex-grow-1">Basic features for your needs. Perfect for getting started!</p>
+                    <button class="btn btn-primary mt-2">Try it!</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border rounded" style="background-color: #FFEDCC; height: 350px;" onmouseover="this.classList.add('shadow');" onmouseout="this.classList.remove('shadow');">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title"><strong>Premium Plans</strong></h5>
+                    <p class="card-text flex-grow-1">Advanced features for professionals. Unlock the full potential!</p>
+                    <button class="btn btn-primary mt-2">Try it!</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border rounded" style="background-color: #FFDBAC; height: 300px;" onmouseover="this.classList.add('shadow');" onmouseout="this.classList.remove('shadow');">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title"><strong>Student Plans</strong></h5>
+                    <p class="card-text flex-grow-1">Tailored for students. Affordable and packed with essential features!</p>
+                    <button class="btn btn-primary mt-2">Try it!</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
